@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const address = "서울특별시 영등포구 영등포동 618-296 영등포전통시장";
       navigator.clipboard.writeText(address).then(() => {
         const originalText = copyBtn.innerHTML;
-        copyBtn.innerHTML = '✅ 복사 완료!';
+        copyBtn.innerHTML = '복사 완료!';
         setTimeout(() => {
           copyBtn.innerHTML = originalText;
         }, 2000);

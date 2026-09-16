@@ -373,6 +373,7 @@ ul, ol {
 .dday-box {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
   background: linear-gradient(135deg, #2A104E, #180B2E);
   color: #FFFFFF;
@@ -381,6 +382,7 @@ ul, ol {
   box-shadow: var(--shadow-md);
   margin-bottom: 36px;
   border: 1px solid rgba(168, 85, 247, 0.3);
+  max-width: 100%;
 }
 
 .dday-title {
@@ -389,14 +391,18 @@ ul, ol {
   font-weight: 700;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 6px;
+  white-space: nowrap;
 }
 
 .dday-digits {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .dday-unit {
@@ -406,6 +412,33 @@ ul, ol {
   font-size: 1.15rem;
   font-variant-numeric: tabular-nums;
   border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (max-width: 600px) {
+  .dday-box {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 20px;
+    width: 100%;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+
+  .dday-title {
+    font-size: 0.88rem;
+  }
+
+  .dday-digits {
+    gap: 6px;
+    font-size: 0.88rem;
+  }
+
+  .dday-unit {
+    padding: 4px 7px;
+    font-size: 1.05rem;
+  }
 }
 
 .hero-actions {
