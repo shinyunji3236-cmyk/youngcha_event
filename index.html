@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영등포 전통시장 with 영차 💜 | 영-파티 팝업 & 야시장</title>
+  <meta name="description" content="2026 영등포 전통시장 with 영차! 9/18(금)~9/19(토) 팝업스토어 전시, 종이뽑기, 영수증 사진기 이벤트 & 청년 야시장 파티에 여러분을 초대합니다.">
+  <meta name="keywords" content="영등포전통시장, 영차, young-cha, 야시장, 팝업스토어, 7번집, 군산집, 추석온누리상품권환급">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="영등포 전통시장 with 영차 | 영-파티 팝업 & 야시장">
+  <meta property="og:description" content="전통시장의 정겨움과 청년의 유쾌한 만남! 9/18~19 팝업스토어 & 야시장 오픈 🍻">
+  <meta property="og:image" content="images/insta_gunsan.png">
+
+  <!-- Favicon & Pretendard Font -->
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. 상단 헤더 & GNB -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" id="headerLogo">
+        <span>young-cha</span>
+        <span class="logo-badge">영차 💜</span>
+      </a>
+
+      <!-- 데스크톱 네비게이션 -->
+      <nav class="nav-desktop">
+        <a href="#popup" class="nav-link">팝업 스토어</a>
+        <a href="#nightmarket" class="nav-link">영-파티 야시장</a>
+        <a href="#stories" class="nav-link">시장 이야기</a>
+        <a href="#chuseok" class="nav-link">추석 환급행사</a>
+        <a href="#location" class="nav-link">오시는 길</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0fXyxu8cU6Dea35BbrPlyVKg8eiQco507-n66Tb0pVjEPQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="nav-cta" id="navApplyBtn">
+          야시장 신청 📝
+        </a>
+      </nav>
+
+      <!-- 모바일 햄버거 토글 버튼 -->
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- 모바일 드로어 메뉴 -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#popup" class="nav-link">🎪 팝업 스토어 안내</a>
+      <a href="#nightmarket" class="nav-link">🍻 영-파티 야시장 안내</a>
+      <a href="#stories" class="nav-link">📖 영차 시장 이야기 (인스타그램)</a>
+      <a href="#chuseok" class="nav-link">🌕 추석 온누리상품권 환급</a>
+      <a href="#location" class="nav-link">📍 오시는 길</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0fXyxu8cU6Dea35BbrPlyVKg8eiQco507-n66Tb0pVjEPQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top: 10px;">
+        야시장 무료 참가 신청하기 📝
+      </a>
+    </nav>
+  </header>
+
+  <!-- 2. 히어로 섹션 (Hero Section) -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge-wrap">
+        <span class="hero-badge-tag">D-DAY EVENT</span>
+        <span class="hero-badge-date">2026.09.18(금) ~ 09.19(토)</span>
+      </div>
+
+      <h1 class="hero-title">
+        [영등포 전통시장 <span class="highlight">with 영차</span>]<br>
+        영-파티 팝업 & 야시장 오픈! 🍻
+      </h1>
+
+      <p class="hero-subtitle">
+        42년 전통의 골목 손맛부터 시원한 야장 삼겹살까지,<br>
+        전통시장의 정겨운 온기와 청년들의 유쾌한 에너지가 만나는 이틀간의 특별한 기록! 💜
+      </p>
+
+      <!-- 실시간 카운트다운 박스 -->
+      <div class="dday-box">
+        <span class="dday-title">⏳ 행사 시작까지</span>
+        <div class="dday-digits">
+          <span class="dday-unit" id="dday-days">00</span>일
+          <span class="dday-unit" id="dday-hours">00</span>시간
+          <span class="dday-unit" id="dday-minutes">00</span>분
+          <span class="dday-unit" id="dday-seconds">00</span>초
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0fXyxu8cU6Dea35BbrPlyVKg8eiQco507-n66Tb0pVjEPQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="heroCtaBtn">
+          <span>야시장 무료 참가 신청하기</span>
+          <span>📝</span>
+        </a>
+        <a href="#popup" class="btn btn-secondary">
+          <span>팝업 & 프로그램 둘러보기</span>
+          <span>↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 섹션 1: 팝업 스토어 & 영-파티 야시장 안내 -->
+  <section class="section" id="popup">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PROGRAM 01 & 02</span>
+        <h2 class="section-title">팝업 스토어 & 영-파티 야시장</h2>
+        <p class="section-desc">낮에는 누구나 즐기는 풍성한 팝업 이벤트, 밤에는 청년들이 함께하는 맛있는 야시장 네트워킹!</p>
+      </div>
+
+      <div class="events-grid">
+        <!-- 팝업스토어 카드 -->
+        <article class="event-card">
+          <span class="card-top-tag">누구나 참여 가능</span>
+          <div class="event-icon">🎪</div>
+          <h3 class="event-title">영차 팝업 스토어</h3>
+          <p class="event-target">전통시장을 찾는 시민 누구나 자유롭게 방문!</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">일시</span>
+              <span class="info-value"><strong>9월 18일(금) ~ 9월 19일(토)</strong> / 13:00 ~ 18:00</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">장소</span>
+              <span class="info-value">영등포 전통시장 노점 사거리 (남문 화장실 인근)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">내용</span>
+              <span class="info-value">2026년도 영등포 전통시장과 함께해온 영차의 로컬 아카이빙 이야기 전시</span>
+            </div>
+          </div>
+
+          <div class="event-perks">
+            <h4 class="perks-title">🎁 현장 참여 특별 이벤트</h4>
+            <div class="perk-badges">
+              <div class="perk-badge-item">
+                <span>🎯</span>
+                <div>
+                  <strong>추억의 종이 뽑기 이벤트</strong><br>
+                  간단한 설문 참여 시 100% 당첨! 1~4등 푸짐한 시장 경품 증정
+                </div>
+              </div>
+              <div class="perk-badge-item">
+                <span>📸</span>
+                <div>
+                  <strong>영수증 즉석 사진 무료 촬영</strong><br>
+                  인스타그램 <a href="https://www.instagram.com/connect0cha_official/" target="_blank" rel="noopener noreferrer" style="color: var(--brand-purple); font-weight: 700;">@connect0cha_official</a> 팔로우 시 찰칵!
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 영-파티 야시장 카드 (Hot) -->
+        <article class="event-card featured" id="nightmarket">
+          <span class="card-top-tag" style="background: var(--brand-purple);">선착순 선발 (무료)</span>
+          <div class="event-icon">🍻</div>
+          <h3 class="event-title">영-파티 야시장</h3>
+          <p class="event-target">만 34세 이하 청년을 위한 시원한 로컬 소통 프로그램</p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-label">일시</span>
+              <span class="info-value"><strong>9월 18일(금) ~ 9월 19일(토)</strong> / 18:00 ~ 20:00</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">대상</span>
+              <span class="info-value">만 34세 이하 청년 누구나 (일자별 <strong>선착순 10명</strong>)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">참가비</span>
+              <span class="info-value"><strong>전액 무료! 💜</strong> (시장 대표 맛집 안주 & 주류 지원)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">장소</span>
+              <span class="info-value">영등포 전통시장 대표 야장 맛집 일대</span>
+            </div>
+          </div>
+
+          <div class="event-perks">
+            <h4 class="perks-title">✨ 왜 참여해야 할까요?</h4>
+            <div class="perk-badges">
+              <div class="perk-badge-item">
+                <span>🥩</span>
+                <div><strong>시장 찐 맛집 탐방:</strong> 군산집 삼겹살 & 7번집 안주와 함께하는 야장 감성</div>
+              </div>
+              <div class="perk-badge-item">
+                <span>💬</span>
+                <div><strong>유쾌한 청년 네트워킹:</strong> 로컬과 일상을 나누는 편안하고 즐거운 대화</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-cta-wrap">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0fXyxu8cU6Dea35BbrPlyVKg8eiQco507-n66Tb0pVjEPQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="btn btn-primary card-cta-btn" id="nightmarketApplyBtn">
+              <span>구글폼으로 야시장 참가 신청하기</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 섹션 2: 영차가 지금까지 한 일 - 시장 이야기 (실제 첨부 인스타그램 이미지 가로 병렬 그리드) -->
+  <section class="section" id="stories" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">INSTAGRAM ARCHIVE</span>
+        <h2 class="section-title">영차가 지금까지 한 일 : 시장 이야기</h2>
+        <p class="section-desc">이미지를 클릭하시면 영차 인스타그램 공식 게시물로 바로 이동하여 카드뉴스를 확인하실 수 있습니다! 📸</p>
+      </div>
+
+      <!-- 인스타그램 실제 피드 이미지 가로 병렬 그리드 -->
+      <div class="insta-parallel-grid">
+        <!-- 7번집 인스타그램 다이렉트 링크 카드 -->
+        <a href="https://www.instagram.com/p/Dc5ZLV1Ejj2/?img_index=1" target="_blank" rel="noopener noreferrer" class="insta-post-link" title="7번집 인스타그램 카드뉴스 보러가기">
+          <article class="insta-post-card">
+            <div class="insta-image-container">
+              <img src="images/insta_7bun.png" alt="영등포 시장판 오마카세 7번집 인스타그램 게시물">
+              <div class="insta-hover-overlay">
+                <span class="insta-badge-pill">
+                  <span>📷</span>
+                  <span>Instagram에서 보기 ↗</span>
+                </span>
+              </div>
+            </div>
+            <div class="insta-card-footer">
+              <span class="insta-store-name">🏮 영등포 시장판 오마카세 [7번집]</span>
+              <span class="insta-click-guide">게시물 바로가기 ➔</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 군산집 인스타그램 다이렉트 링크 카드 -->
+        <a href="https://www.instagram.com/p/Dc0hXOelIm2/?img_index=1" target="_blank" rel="noopener noreferrer" class="insta-post-link" title="군산집 인스타그램 카드뉴스 보러가기">
+          <article class="insta-post-card">
+            <div class="insta-image-container">
+              <img src="images/insta_gunsan.png" alt="영차의 또또또간집 군산집 인스타그램 게시물">
+              <div class="insta-hover-overlay">
+                <span class="insta-badge-pill">
+                  <span>📷</span>
+                  <span>Instagram에서 보기 ↗</span>
+                </span>
+              </div>
+            </div>
+            <div class="insta-card-footer">
+              <span class="insta-store-name">🥩 영차의 또또또간집 [군산집]</span>
+              <span class="insta-click-guide">게시물 바로가기 ➔</span>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 섹션 3: 추석맞이 전통시장 온누리상품권/환급 행사 안내 -->
+  <section class="section" id="chuseok">
+    <div class="container">
+      <div class="chuseok-card">
+        <div class="chuseok-info">
+          <span class="chuseok-badge">🌕 2026 추석맞이 특별 혜택</span>
+          <h2 class="chuseok-title">농축산물 할인 지원<br>전통시장 온누리상품권 환급행사</h2>
+          <p class="chuseok-desc">
+            영등포 전통시장에서 국내산 신선 농축산물을 구매하시고 영수증을 지참하시면, 
+            구매 금액에 따라 <strong>온누리상품권을 즉시 환급</strong>해 드립니다!
+          </p>
+
+          <div class="refund-boxes">
+            <div class="refund-box">
+              <div class="refund-condition">34,000원 이상 구매 시</div>
+              <div class="refund-amount">10,000원 환급 🎁</div>
+            </div>
+            <div class="refund-box gold">
+              <div class="refund-condition">67,000원 이상 구매 시</div>
+              <div class="refund-amount">20,000원 환급 🎁</div>
+            </div>
+          </div>
+
+          <div class="chuseok-notice">
+            <p>• <strong>대상 품목:</strong> 국내산 신선 농축산물 구매 영수증 (행사 당일 발급분)</p>
+            <p>• <strong>환급 장소:</strong> 시장 내 환급 전용 부스 (행사 기간 내 1인당 한도 적용)</p>
+            <p>• <strong>행사 문의처:</strong> 📞 <strong>02-6956-2254</strong></p>
+          </div>
+        </div>
+
+        <div class="chuseok-img-wrap">
+          <img src="images/chuseok_event.jpg" alt="추석맞이 농축산물 할인 지원 전통시장 환급행사 안내 현수막">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 섹션 4: 오시는 길 (사용자 제공 카카오맵 공식 정적 지도 HTML 적용) -->
+  <section class="section" id="location" style="background: #FFFFFF;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LOCATION</span>
+        <h2 class="section-title">오시는 길</h2>
+        <p class="section-desc">대중교통으로 편리하게 찾아오실 수 있는 영등포 전통시장 위치를 안내해 드립니다.</p>
+      </div>
+
+      <div class="map-wrapper">
+        <!-- 대중교통 안내 바 -->
+        <div class="map-transit-grid">
+          <div class="transit-item">
+            <div class="subway-badge subway-line5">5</div>
+            <div class="transit-text">
+              <h4>5호선 영등포시장역</h4>
+              <p><strong>3번 출구</strong>에서 도보 3분 (약 200m 직진 후 시장 남문 진입)</p>
+            </div>
+          </div>
+
+          <div class="transit-item">
+            <div class="subway-badge subway-line1">1</div>
+            <div class="transit-text">
+              <h4>1호선 영등포역</h4>
+              <p><strong>1번 출구</strong>에서 도보 10분 (영등포 로터리 방면 직진)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 사용자 제공 카카오맵 공식 정적 지도 영역 -->
+        <div class="kakaomap-custom-container">
+          <div class="kakaomap-custom-wrap">
+            <a href="https://map.kakao.com/?urlX=479685&urlY=1116777&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank" class="kakaomap-static-link" title="카카오맵에서 크게 보기">
+              <img width="504" height="310" src="https://staticmap.kakao.com/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=479685&MY=1116778&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc" alt="영등포 전통시장 카카오맵">
+            </a>
+            <div class="hide" style="overflow:hidden;padding:7px 11px;border:1px solid #dfdfdf;border-color:rgba(0,0,0,.1);border-radius:0 0 2px 2px;background-color:#f9f9f9;width:100%;max-width:504px;box-sizing:border-box;">
+              <strong style="float: left;"><img src="//t1.kakaocdn.net/localimg/localimages/07/2018/pc/common/logo_kakaomap.png" width="72" height="16" alt="카카오맵"></strong>
+              <div style="float: right;position:relative"><a style="font-size:12px;text-decoration:none;float:left;height:15px;padding-top:1px;line-height:15px;color:#000" target="_blank" href="https://map.kakao.com/?urlX=479685&urlY=1116777&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false">지도 크게 보기</a></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 주소 정보 및 길찾기 버튼 바 -->
+        <div class="map-action-bar">
+          <div class="map-address-text">
+            <span>🏠 <strong>서울특별시 영등포구 영등포동 618-296 일대 (영등포전통시장)</strong></span>
+            <button class="btn btn-secondary" id="copyAddressBtn" style="padding: 6px 14px; font-size: 0.85rem;">
+              주소 복사 📋
+            </button>
+          </div>
+
+          <div class="map-btn-group">
+            <a href="https://map.kakao.com/?urlX=479685&urlY=1116777&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank" rel="noopener noreferrer" class="map-link-btn map-link-kakao">
+              <span>🟡 카카오맵 바로가기</span>
+            </a>
+            <a href="https://map.naver.com/p/search/영등포전통시장" target="_blank" rel="noopener noreferrer" class="map-link-btn map-link-naver">
+              <span>🟢 네이버지도 길찾기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 푸터 (Footer) -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>young-cha</span>
+        <span style="font-size: 1.1rem; color: var(--primary-300); font-weight: 700;">영차 💜</span>
+      </div>
+
+      <p class="footer-tagline">
+        전통시장과 청년을 잇는 로컬 크리에이티브 팀 '영차(young-cha)'가 전하는 정겨운 시장 이야기
+      </p>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/connect0cha_official/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <span>📷 Instagram @connect0cha_official</span>
+        </a>
+      </div>
+
+      <div class="footer-copy">
+        <p>© 2026 영차(young-cha) Project. All rights reserved. | 영등포 전통시장 상인회 협력</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 플로팅 야시장 신청 CTA (모바일 친화) -->
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv0fXyxu8cU6Dea35BbrPlyVKg8eiQco507-n66Tb0pVjEPQ/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="floating-bottom-cta" id="floatingApplyBtn">
+    <span>야시장 신청</span>
+    <span>📝</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
