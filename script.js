@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  document.querySelectorAll('.fade-in-section, .event-card, .story-card, .chuseok-card, .map-wrapper, .store-story-section').forEach(el => {
+  document.querySelectorAll('.fade-in-section, .event-card, .story-card, .chuseok-poster-card, .map-wrapper, .store-story-section').forEach(el => {
     el.classList.add('fade-in-section');
     observer.observe(el);
   });

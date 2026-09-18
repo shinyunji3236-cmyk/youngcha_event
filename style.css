@@ -793,117 +793,41 @@ ul, ol {
   margin-top: 10px;
 }
 
-/* 9. 섹션 3: 추석 환급 행사 */
-.chuseok-card {
-  background: linear-gradient(135deg, #2E1065, #1E1B4B);
+/* 9. 섹션 3: 추석 환급 행사 포스터 */
+.chuseok-section {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.chuseok-poster-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.chuseok-poster-wrapper {
+  max-width: 760px;
+  width: 100%;
   border-radius: var(--radius-lg);
-  color: #FFFFFF;
-  padding: 40px;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(221, 214, 254, 0.2);
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 36px;
-  align-items: center;
-}
-
-@media (max-width: 920px) {
-  .chuseok-card {
-    grid-template-columns: 1fr;
-    padding: 28px 20px;
-    gap: 28px;
-  }
-}
-
-.chuseok-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(253, 224, 71, 0.18);
-  color: var(--accent-yellow);
-  font-size: 0.85rem;
-  font-weight: 800;
-  padding: 5px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 14px;
-  border: 1px solid rgba(253, 224, 71, 0.35);
-}
-
-.chuseok-title {
-  font-size: clamp(1.4rem, 2.6vw, 1.85rem);
-  font-weight: 900;
-  line-height: 1.35;
-  margin-bottom: 14px;
-  color: #FFFFFF;
-}
-
-.chuseok-desc {
-  font-size: 0.98rem;
-  color: var(--primary-200);
-  line-height: 1.6;
-  margin-bottom: 24px;
-}
-
-.refund-boxes {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-@media (max-width: 480px) {
-  .refund-boxes {
-    grid-template-columns: 1fr;
-  }
-}
-
-.refund-box {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 16px;
-  border-radius: var(--radius-md);
-  text-align: center;
-}
-
-.refund-box.gold {
-  background: rgba(245, 158, 11, 0.12);
-  border-color: rgba(245, 158, 11, 0.4);
-}
-
-.refund-condition {
-  font-size: 0.85rem;
-  color: var(--primary-200);
-  margin-bottom: 4px;
-}
-
-.refund-box.gold .refund-condition {
-  color: #FDE68A;
-}
-
-.refund-amount {
-  font-size: 1.35rem;
-  font-weight: 900;
-  color: #FFFFFF;
-}
-
-.refund-box.gold .refund-amount {
-  color: var(--accent-yellow);
-}
-
-.chuseok-notice {
-  font-size: 0.85rem;
-  color: var(--primary-300);
-  line-height: 1.5;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 14px;
-}
-
-.chuseok-img-wrap {
-  border-radius: var(--radius-md);
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12), 0 4px 16px rgba(124, 58, 237, 0.08);
+  border: 1.5px solid var(--border-light);
+  background: #FFFFFF;
+  transition: var(--transition-bounce);
+}
+
+.chuseok-poster-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(124, 58, 237, 0.2);
+  border-color: var(--brand-purple-light);
+}
+
+.chuseok-poster-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* 10. 섹션 4: 오시는 길 & 카카오맵 공식 정적 지도 */
