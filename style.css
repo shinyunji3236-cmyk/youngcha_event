@@ -662,6 +662,9 @@ ul, ol {
 
 .card-cta-wrap {
   margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card-cta-btn {
